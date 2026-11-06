@@ -114,4 +114,4 @@ show running-config
 
 ## Additional Evidence
 - [Initial VLAN state](07-initial-vlan-state-optional.png)
-- [Access port running configuration](08-access-port-running-config-optional.png)
+
