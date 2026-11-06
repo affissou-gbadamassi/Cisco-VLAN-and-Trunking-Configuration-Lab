@@ -37,7 +37,7 @@ exit
 end
 show vlan
 ```
-![VLAN 50 HR and VLAN 60 MANAGEMENT configured](screenshots/01-vlan-creation-and-naming.png)
+![VLAN 50 HR and VLAN 60 MANAGEMENT configured](01-vlan-creation-and-naming.png)
 
 *Figure 1 — Created VLAN 50 (HR) and VLAN 60 (MANAGEMENT), verified using `show vlan`.*
 
@@ -49,7 +49,7 @@ interface GigabitEthernet0/2
  switchport access vlan 60
 exit
 ```
-![Individual access-port configuration and command correction](screenshots/02-access-port-vlan60.png)
+![Individual access-port configuration and command correction](02-access-port-vlan60.png)
 
 *Figure 2 — Configured Gi0/2 as a VLAN 60 access port; corrected an invalid command.*
 
@@ -60,7 +60,7 @@ interface range FastEthernet0/2-7
  switchport access vlan 50
 exit
 ```
-![Range of access ports assigned to VLAN 50](screenshots/03-interface-range-vlan50.png)
+![Range of access ports assigned to VLAN 50](03-interface-range-vlan50.png)
 
 *Figure 3 — Used `interface range` to assign Fa0/2 through Fa0/7 to VLAN 50 in one operation.*
 
@@ -68,7 +68,7 @@ exit
 ```cisco
 do show vlan
 ```
-![VLAN membership verification](screenshots/04-vlan-membership-verification.png)
+![VLAN membership verification](04-vlan-membership-verification.png)
 
 *Figure 4 — Verified VLAN 50 membership for Fa0/2–Fa0/7 and Gi0/1, and VLAN 60 membership for Gi0/2.*
 
@@ -79,7 +79,7 @@ interface FastEthernet0/22
  switchport trunk allowed vlan 50,60
 exit
 ```
-![Trunk port configuration](screenshots/05-trunk-configuration.png)
+![Trunk port configuration](05-trunk-configuration.png)
 
 *Figure 5 — Configured Fa0/22 for trunking, allowing only VLANs 50 and 60.*
 
@@ -88,7 +88,7 @@ exit
 end
 show running-config
 ```
-![Trunk running configuration](screenshots/06-trunk-running-config.png)
+![Trunk running configuration](06-trunk-running-config.png)
 
 *Figure 6 — Running configuration confirms the trunk settings on Fa0/22.*
 
@@ -113,5 +113,5 @@ show running-config
 5. Save the Packet Tracer `.pkt` file alongside the screenshots if available.
 
 ## Additional Evidence
-- [Initial VLAN state](screenshots/07-initial-vlan-state-optional.png)
-- [Access port running configuration](screenshots/08-access-port-running-config-optional.png)
+- [Initial VLAN state](07-initial-vlan-state-optional.png)
+- [Access port running configuration](08-access-port-running-config-optional.png)
